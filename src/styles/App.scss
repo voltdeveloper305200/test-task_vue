@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.block-title {
+    text-align: center;
+    margin-top: 40px;
+    h3 {
+        font-size: 4vh;
+    }
+}
+
+.todo-filter {
+    margin-top: 40px;
+}
+
+.todo-list {
+    margin-top: 60px;
+    .todo-card {
+        margin: 10px 0 10px 0;
+        border: 2px solid teal;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .todo-card__header {
+            h5 {
+                margin-top: 15px;
+            }
+            p {
+                margin-top: 10px;
+            }
+            span {
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+        .todo-card__content {
+            margin-top: 20px;
+            height: 100px;
+            overflow: auto;
+        }
+        .todo-card__tags {
+            span {
+                margin: 0 5px 0 5px;
+            }
+        }
+        .todo-card__footer {
+            margin-top: 20px;
+        }
+    }
+}
+
+.add-todo-page__form {
+    margin-top: 40px;
+}
