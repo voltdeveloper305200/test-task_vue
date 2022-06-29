@@ -48,7 +48,7 @@
             </label>
             <select id="statusTodo" class="form-select" v-model="status">
                 <option
-                    v-for="option in optionsSelect"
+                    v-for="option in options"
                     :value="option.value"
                     :key="option.value"
                     >{{ option.name }}</option
@@ -79,16 +79,13 @@
 <script>
 import { mapState, mapActions } from "vuex";
 import { required, maxLength } from "vuelidate/lib/validators";
+import { options } from "@/constants";
 
 export default {
     name: "EditTodoForm",
     data() {
         return {
-            optionsSelect: [
-                { value: "work", name: "В работе" },
-                { value: "complete", name: "Выполненные" },
-                { value: "failed", name: "Просроченные" }
-            ],
+            options,
             id: "",
             title: null,
             date: null,

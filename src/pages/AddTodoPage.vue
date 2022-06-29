@@ -13,6 +13,7 @@
 import AddTodoForm from "@/components/AddTodoForm.vue";
 
 export default {
+    name: "AddTodoPage",
     components: {
         AddTodoForm
     }

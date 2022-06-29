@@ -20,10 +20,11 @@ body {
         margin: 10px 0 10px 0;
         border: 2px solid teal;
         padding: 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         .todo-card__header {
+            .todo-title {
+                overflow: auto;
+                word-break: break-all;
+            }
             h5 {
                 margin-top: 15px;
             }
@@ -39,6 +40,7 @@ body {
             margin-top: 20px;
             height: 100px;
             overflow: auto;
+            word-break: break-all;
         }
         .todo-card__tags {
             span {

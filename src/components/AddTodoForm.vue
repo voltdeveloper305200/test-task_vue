@@ -99,7 +99,7 @@ export default {
             if (!this.$v.$invalid) {
                 const newTodo = {
                     id: Date.now(),
-                    status: "failed",
+                    status: "work",
                     title: this.title,
                     description: this.description,
                     deadline: this.date,
@@ -120,14 +120,10 @@ export default {
             this.tags = "";
             this.$v.$reset();
         },
-        ...mapActions({
-            addTodo: "addTodo"
-        })
+        ...mapActions(["addTodo"])
     },
     computed: {
-        ...mapState({
-            todos: state => state.todos
-        })
+        ...mapState(["todos"])
     }
 };
 </script>

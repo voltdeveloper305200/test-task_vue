@@ -4,7 +4,7 @@
             <div class="block-title">
                 <h3>Редактирование задачи с ID: {{ this.$route.params.id }}</h3>
             </div>
-            <EditTodoForm></EditTodoForm>
+            <EditTodoForm />
         </div>
     </div>
 </template>
